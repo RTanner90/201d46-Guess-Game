@@ -62,10 +62,10 @@ function q5(){
 }
 
 //* More questions utilizing flow control*//
-var fav_game_console = prompt('Whats your favorite gaming console? xbox, playstation, nintendo, or pc');
-var my_fav;
-
 function q6(){
+  var fav_game_console = prompt('Whats your favorite gaming console? xbox, playstation, nintendo, or pc');
+
+
   console.log('what is the users fav game console');
   switch(fav_game_console){
   case 'xbox' :
@@ -92,7 +92,7 @@ function q6(){
 
 function q7(){
   console.log('asking what' + my_fav + 'is');
-  my_fav = prompt('What do you think is my favorite gaming console?');
+  var my_fav = prompt('What do you think is my favorite gaming console?');
 
   switch(my_fav){
   case 'xbox' :
@@ -115,6 +115,7 @@ function q7(){
   console.log('user did not input answer for' + my_fav);
   while(my_fav === '' || my_fav === null){
     my_fav = prompt('This is not that hard come on');}
+  alert('See that was not so hard was it?');
 }
 
 q1();
